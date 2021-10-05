@@ -24,7 +24,7 @@ Route::post('/deneme', function(){
     $response2 = $validator->validator($_POST)
     ->textMin(['text', 'text2'], [5, 5])
     ->textMax(['text', 'text2'], [20, 20])
-    ->regex(['text', 'text2'], ['/[0-9]+/', '/[a-z]+/'], ['onlyNumber', 'onlyChar'], ['sadece sayı olabilir', 'sadece harf olabilir']) 
+    ->regex(['text', 'text2'], ['/[0-9]+/', '/[a-z]+/'], ['containNumber', 'containChar'], ['sayı içermeli', 'harf içermeli']) 
     ->csrf()
     ->validate();
 

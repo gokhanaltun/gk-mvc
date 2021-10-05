@@ -87,19 +87,6 @@
             return $this;
         }
 
-        public function number(array $post_data_keys){
-
-            for($i = 0; $i < count($post_data_keys); $i++){
-                $data = $this->post_data[$post_data_keys[$i]];
-                if(isset($data)){
-                    if(!preg_match('/[0-9]+/', $data)){
-                        $this->errors['number'][$post_data_keys[$i]] = ' Can only contains number';
-                    }
-                }
-            }
-            return $this;
-        }
-
         public function email(array $post_data_keys){
 
             for($i = 0; $i < count($post_data_keys); $i++){
