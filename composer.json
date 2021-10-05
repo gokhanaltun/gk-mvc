@@ -1,0 +1,26 @@
+{
+    "name": "gokhanaltun/gk-template",
+    "description": "Personal Php Web Template",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gokhan Altun",
+            "email": "mail.gokhan52@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "GKTemplate\\": "app/"
+        }
+    },
+    "config": {
+        "platform-check": false
+    },
+    "require": {
+        "illuminate/database": "^8.62",
+        "illuminate/events": "^8.62",
+        "doctrine/dbal": "2.13"
+    }
+}
