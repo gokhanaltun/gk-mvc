@@ -506,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "8e6c29c49f28b90e9de0cac1c14290feb99202c5"
+                "reference": "7d766ce15252597038142d72a28d9bfb17fd85c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/8e6c29c49f28b90e9de0cac1c14290feb99202c5",
-                "reference": "8e6c29c49f28b90e9de0cac1c14290feb99202c5",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/7d766ce15252597038142d72a28d9bfb17fd85c9",
+                "reference": "7d766ce15252597038142d72a28d9bfb17fd85c9",
                 "shasum": ""
             },
             "require": {
@@ -522,7 +522,7 @@
             "suggest": {
                 "symfony/var-dumper": "Required to use the dump method (^5.1.4)."
             },
-            "time": "2021-09-30T15:04:19+00:00",
+            "time": "2021-10-05T16:35:10+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -663,17 +663,17 @@
         },
         {
             "name": "illuminate/database",
-            "version": "8.x-dev",
-            "version_normalized": "8.9999999.9999999.9999999-dev",
+            "version": "v8.62.0",
+            "version_normalized": "8.62.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "60b1c932d20b4f1199e9ed713a27fa3dce05e1e2"
+                "reference": "327c22dc8f117c07a3e00ecfb4f5011ede445407"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/60b1c932d20b4f1199e9ed713a27fa3dce05e1e2",
-                "reference": "60b1c932d20b4f1199e9ed713a27fa3dce05e1e2",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/327c22dc8f117c07a3e00ecfb4f5011ede445407",
+                "reference": "327c22dc8f117c07a3e00ecfb4f5011ede445407",
                 "shasum": ""
             },
             "require": {
@@ -695,7 +695,7 @@
                 "illuminate/pagination": "Required to paginate the result set (^8.0).",
                 "symfony/finder": "Required to use Eloquent model factories (^5.1.4)."
             },
-            "time": "2021-09-28T19:29:56+00:00",
+            "time": "2021-09-28T13:10:43+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -734,8 +734,8 @@
         },
         {
             "name": "illuminate/events",
-            "version": "8.x-dev",
-            "version_normalized": "8.9999999.9999999.9999999-dev",
+            "version": "v8.62.0",
+            "version_normalized": "8.62.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",

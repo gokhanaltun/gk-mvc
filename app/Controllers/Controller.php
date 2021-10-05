@@ -1,8 +1,8 @@
 <?php
-    namespace GKTemplate\Controllers;
+    namespace App\Controllers;
 
-    use GKTemplate\System\TemplateRenderer;
-    use GKTemplate\Validators\FormValidator;
+    use App\System\TemplateRenderer;
+    use App\Validators\FormValidator;
 
 
     class Controller{

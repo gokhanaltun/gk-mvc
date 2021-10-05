@@ -1,8 +1,9 @@
 <?php 
+namespace App\Routing;
 
-use GKTemplate\Routing\Route;
-use GKTemplate\System\TemplateRenderer;
-use GKTemplate\Validators\FormValidator;
+use App\Routing\Route;
+use App\System\TemplateRenderer;
+use App\Validators\FormValidator;
 
 $renderer = new TemplateRenderer();
 

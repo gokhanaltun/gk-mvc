@@ -1,7 +1,7 @@
 <?php 
-    namespace GKTemplate\Middlewares;
+    namespace App\Middlewares;
 
-    use GKTemplate\Middlewares\IMiddleware;
+    use App\Middlewares\IMiddleware;
     
     class Auth implements IMiddleware{
 

@@ -12,15 +12,15 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "GKTemplate\\": "app/"
+            "App\\": "app/"
         }
     },
     "config": {
         "platform-check": false
     },
     "require": {
-        "illuminate/database": "^8.62",
-        "illuminate/events": "^8.62",
+        "illuminate/database": "8.62",
+        "illuminate/events": "8.62",
         "doctrine/dbal": "2.13"
     }
 }

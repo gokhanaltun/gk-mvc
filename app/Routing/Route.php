@@ -1,7 +1,7 @@
 <?php 
-    namespace GKTemplate\Routing;
+    namespace App\Routing;
 
-    use GKTemplate\System\Session;
+    use App\System\Session;
 
     class Route{
 

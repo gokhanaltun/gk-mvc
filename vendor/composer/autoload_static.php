@@ -55,10 +55,6 @@ class ComposerStaticInitc34a39ced7bff4ad47b49b5468a43cdd
             'Illuminate\\Container\\' => 21,
             'Illuminate\\Bus\\' => 15,
         ),
-        'G' => 
-        array (
-            'GKTemplate\\' => 11,
-        ),
         'D' => 
         array (
             'Doctrine\\Inflector\\' => 19,
@@ -70,6 +66,10 @@ class ComposerStaticInitc34a39ced7bff4ad47b49b5468a43cdd
         'C' => 
         array (
             'Carbon\\' => 7,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -160,10 +160,6 @@ class ComposerStaticInitc34a39ced7bff4ad47b49b5468a43cdd
         array (
             0 => __DIR__ . '/..' . '/illuminate/bus',
         ),
-        'GKTemplate\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
         'Doctrine\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
@@ -187,6 +183,10 @@ class ComposerStaticInitc34a39ced7bff4ad47b49b5468a43cdd
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 

@@ -1,5 +1,5 @@
 <?php
-    namespace GKTemplate\System;
+    namespace App\System;
 
     session_start();
 

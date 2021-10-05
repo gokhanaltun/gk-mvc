@@ -1,5 +1,5 @@
 <?php 
-namespace GKTemplate\System;
+namespace App\System;
 
 require_once dirname(dirname(__DIR__)) . '/vendor/autoload.php';
 require_once __DIR__ . '/config.php';

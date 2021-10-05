@@ -1,5 +1,5 @@
 <?php 
-    namespace GKTemplate\Middlewares;
+    namespace App\Middlewares;
 
     interface IMiddleware{
         public function handle();

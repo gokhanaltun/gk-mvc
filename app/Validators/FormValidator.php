@@ -1,7 +1,7 @@
 <?php
-    namespace GKTemplate\Validators;
+    namespace App\Validators;
 
-    use GKTemplate\System\Session;
+    use App\System\Session;
     
     class FormValidator{
 

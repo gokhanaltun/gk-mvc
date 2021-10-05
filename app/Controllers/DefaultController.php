@@ -1,8 +1,8 @@
 <?php 
-    namespace GKTemplate\Controllers;
+    namespace App\Controllers;
 
-    use GKTemplate\Controllers\Controller;
-    use GKTemplate\Models\User;
+    use App\Controllers\Controller;
+    use App\Models\User;
 
     class DefaultController extends Controller{
 
