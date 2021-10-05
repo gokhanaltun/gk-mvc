@@ -60,7 +60,7 @@
                         require $controllerFile;
 
                         $class = explode('/', $controller);
-                        $class = 'GKTemplate\\Controllers\\' . end($class) . 'Controller';
+                        $class = 'App\\Controllers\\' . end($class) . 'Controller';
                         $class = new $class;
 
                         return call_user_func_array([$class, $controllerMethod], $params);
