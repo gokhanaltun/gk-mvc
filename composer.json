@@ -21,7 +21,6 @@
     "require": {
         "illuminate/database": "8.62",
         "illuminate/events": "8.62",
-        "doctrine/dbal": "2.13",
-        "illuminate/pagination": "8.63"
+        "doctrine/dbal": "2.13"
     }
 }

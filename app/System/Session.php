@@ -10,6 +10,13 @@
             $_SESSION[$session_name] = $session_value;
         }
 
+        public static function addArray($session_name, $session_value){
+            session_regenerate_id(true);
+            for($i = 0; $i < count($session_name); $i++){
+                $_SESSION[$session_name[$i]] = $session_value[$i];
+            }
+        }
+        
         public static function delete($session_name){
             unset($_SESSION[$session_name]);
         }

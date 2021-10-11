@@ -22,7 +22,6 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/collections', $vendorDir . '/illuminate/macroable', $vendorDir . '/illuminate/support'),
     'Illuminate\\Pipeline\\' => array($vendorDir . '/illuminate/pipeline'),
-    'Illuminate\\Pagination\\' => array($vendorDir . '/illuminate/pagination'),
     'Illuminate\\Events\\' => array($vendorDir . '/illuminate/events'),
     'Illuminate\\Database\\' => array($vendorDir . '/illuminate/database'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),

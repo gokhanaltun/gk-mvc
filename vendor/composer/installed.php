@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '14fba9d5f2e25ccb39ab874c0477bdcd119e889f',
+        'reference' => '1e6274b222b8b1ae55dc2b4f93f5c5c511a33b60',
         'name' => 'gokhanaltun/gk-template',
         'dev' => true,
     ),
@@ -61,7 +61,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '14fba9d5f2e25ccb39ab874c0477bdcd119e889f',
+            'reference' => '1e6274b222b8b1ae55dc2b4f93f5c5c511a33b60',
             'dev_requirement' => false,
         ),
         'illuminate/bus' => array(
@@ -125,15 +125,6 @@
             'install_path' => __DIR__ . '/../illuminate/macroable',
             'aliases' => array(),
             'reference' => '300aa13c086f25116b5f3cde3ca54ff5c822fb05',
-            'dev_requirement' => false,
-        ),
-        'illuminate/pagination' => array(
-            'pretty_version' => 'v8.63.0',
-            'version' => '8.63.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../illuminate/pagination',
-            'aliases' => array(),
-            'reference' => 'be5f9d27f36c5f771ec77ad2e6b841d29adc1cef',
             'dev_requirement' => false,
         ),
         'illuminate/pipeline' => array(
