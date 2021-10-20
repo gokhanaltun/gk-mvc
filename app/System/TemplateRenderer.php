@@ -98,7 +98,7 @@
          * {{ $data }}
          */
         private function parseVariables(){
-            $pattern = '/{{(.*)}}/';
+            $pattern = '/{{(.*)}}+/';
             $this->view = preg_replace_callback($pattern, function($params){
                 return '<?=' . trim($params[1]) . '?>';
             }, $this->view);
