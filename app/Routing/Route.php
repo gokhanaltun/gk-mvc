@@ -76,18 +76,6 @@
             echo 'Sayfa Bulunamadı';
         }
 
-        public static function redirect($route){
-            header('Location: ' . $route);
-            exit();
-        }
-
-        public static function back($name = null, $value = null){
-            if($name != null && $value != null){
-                Session::add($name, $value);
-            }
-            self::redirect($_SERVER['HTTP_REFERER']);
-        }
-
     }
 
 ?>
