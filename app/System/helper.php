@@ -22,13 +22,13 @@
         $sourcePath = "app/Resources";
         if(isset($_GET['requestUri'])){
             $requestUri = explode('/', $_GET['requestUri']);
-            $sourcePrefix = "";
+            $prefix = "";
             if($requestUri > 1){
                 for($i = 0; $i < count($requestUri) - 1; $i++){
-                    $sourcePrefix = $sourcePrefix . "../";
+                    $prefix = $prefix . "../";
                 }
     
-                return $sourcePrefix . $sourcePath;
+                return $prefix . $sourcePath;
             }else{
                 return $sourcePath;
             }
@@ -36,5 +36,22 @@
             return $sourcePath;
         }
         
+    }
+
+    function route($page){
+        $pagePath = "";
+        if($page != "/"){
+            $pagePath = $page;
+        }
+        if(isset($_GET['requestUri'])){
+            $requestUri = explode('/', $_GET['requestUri']);
+            $prefix = "";
+            for($i = 0; $i < count($requestUri); $i++){
+                $prefix = $prefix . ".";
+            }
+            return $prefix . "/" . $pagePath;
+        }else{
+            return $pagePath;
+        }
     }
 ?>

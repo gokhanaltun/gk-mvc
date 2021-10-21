@@ -31,9 +31,13 @@ define('LAYOUT_BASE', dirname(__DIR__) . '/Layouts/');
 /**
  * Mysql Database Connection
  */
+define('DB_DRIVER', 'mysql');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'gk_template');
+define('DB_NAME', 'gk_mvc');
 define('DB_USER', 'root');
 define('DB_PASS', '');
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATION', 'utf8_unicode_ci');
+define('DB_PREFIX', '');
 
 ?>
