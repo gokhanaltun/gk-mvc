@@ -11,7 +11,7 @@
         if($name != null && $value != null){
             Session::add($name, $value);
         }
-        redirect($_SERVER['HTTP_REFERER']);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 
     function session_get_once($name){
