@@ -2,7 +2,7 @@
     namespace App\Middlewares;
 
     interface IMiddleware{
-        public function handle();
+        public function handle($requestMethod);
     }
 
 ?>

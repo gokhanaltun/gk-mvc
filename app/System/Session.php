@@ -7,6 +7,7 @@
 
 
         public static function add($session_name, $session_value){
+            session_regenerate_id(true);
             $_SESSION[$session_name] = $session_value;
         }
 
@@ -16,7 +17,7 @@
                 $_SESSION[$session_name[$i]] = $session_value[$i];
             }
         }
-        
+
         public static function delete($session_name){
             unset($_SESSION[$session_name]);
         }
@@ -38,9 +39,14 @@
         }
 
         public static function get_once($session_name){
-            $data = $_SESSION[$session_name];
-            self::delete($session_name);
-            return $data;
+            if(isset($_SESSION[$session_name])){
+                $data = $_SESSION[$session_name];
+                self::delete($session_name);
+                return $data;
+            }
+            else{
+                return false;
+            }
         }
     }
 

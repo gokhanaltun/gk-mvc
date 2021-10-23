@@ -3,7 +3,7 @@
     use App\System\Session;
     
     function redirect($route){
-        header('Location: ' . $route);
+        header('Location: ' . pagePath($route));
         exit();
     }
 
@@ -22,23 +22,22 @@
         $sourcePath = "app/Resources";
         if(isset($_GET['requestUri'])){
             $requestUri = explode('/', $_GET['requestUri']);
-            $prefix = "";
+            $sourcePrefix = "";
             if($requestUri > 1){
                 for($i = 0; $i < count($requestUri) - 1; $i++){
-                    $prefix = $prefix . "../";
+                    $sourcePrefix = $sourcePrefix . "../";
                 }
     
-                return $prefix . $sourcePath;
+                return $sourcePrefix . $sourcePath;
             }else{
                 return $sourcePath;
             }
         }else{
             return $sourcePath;
         }
-        
     }
 
-    function route($page){
+    function pagePath($page){
         $pagePath = "";
         if($page != "/"){
             $pagePath = $page;

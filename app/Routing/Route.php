@@ -1,8 +1,6 @@
 <?php 
     namespace App\Routing;
 
-    use App\System\Session;
-
     class Route{
 
         protected $currentRequestUri;
@@ -34,7 +32,6 @@
                 $path = str_replace(array_keys(URL_PATTERNS), array_values(URL_PATTERNS), $path);
                 
                 $pattern = '@^' . $path . '\/?$@';
-
                 $requestMethodCheck = $requestMethod == $this->currentRequestMethod;
                 $pathCheck = preg_match($pattern, $this->currentRequestUri, $params);
                 
@@ -43,8 +40,9 @@
                     
                     if(!empty($middlewares)){
                         foreach($middlewares as $middleware){
-                            $middlewareClass = new $middleware;
-                            call_user_func([$middlewareClass, 'handle']);
+                            $middlewareClass = 'App\\Middlewares\\' . $middleware;
+                            $middlewareClass = new $middlewareClass;
+                            call_user_func_array([$middlewareClass, 'handle'], [$this->currentRequestMethod]);
                         }
                     }
 
