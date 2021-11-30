@@ -5,7 +5,7 @@
     
     class Auth implements IMiddleware{
 
-        public function handle(){
+        public function handle($requestMethod){
             echo 'Middleware is Working...';
             exit();
         }
